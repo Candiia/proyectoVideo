@@ -1,0 +1,31 @@
+package calculadora;
+
+public class Calculadora {
+
+	/** 
+	 * Este método suma dos números reales
+	 * @param a primer número entero 
+	 * @param b segundo número entero
+	 * @return 
+	 */
+	
+	public double suma (double a, double b) {
+		
+		return a+b;
+		
+	}
+	
+	/**
+	 * Este método resta dos númeres reales 
+	 * @param c primer número entero
+	 * @param d segundo número entero
+	 * @return
+	 */
+	
+	public double resta (double c, double d) {
+		
+		return c-d;
+	}
+	
+	
+}
