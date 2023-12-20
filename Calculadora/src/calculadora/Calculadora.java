@@ -1,65 +1,56 @@
 package calculadora;
 
 /**
- * Clase que implementa una calculadora básica de números enteros 
+ * Esta clase añadimos los métodos necesarios para hacer funcionar nuestra calculadora.
  * @author Cándida Alcantarilla Calado
- * @since 1.0
- * @version 1.1
- * 
+ * @version 1.0
+ * @since 1.1
  */
 
 public class Calculadora {
 
-	/** 
-	 * Este método suma dos números reales
-	 * @since 1.0 
-	 * @see "Libro gordo de petete, donde vas a encontrar como se suma"
-	 * @see <a href= "http://google.es">Ver aqui</a>
-	 * @param a primer número entero 
-	 * @param b segundo número entero
-	 * @return Suma de ambos números
+	/**
+	 * Este método suma dos números reales.
+	 * @param numerador Es el primer número que pedimos desde el main, y hacemos el calculo deseado.
+	 * @param denomidor Es el segundo número que pedimos desde el main, y hacemos el calculo deseado.
+	 * @return Nos devuelve la suma de ambos numeros.
 	 */
 	
-	public double suma (double a, double b) {
-		return a+b;	
+	public double suma(double numerador, double denomidor) {
+		return numerador+denomidor;
 	}
 	
 	
 	/**
-	 * Suma de dos números enteros
-	 * @deprecated
-	 * @param a primer número entero 
-	 * @param b segundo número entero
-	 * @return Suma de ambos números
+	 * Este método nos sirve para restar dos números reales. 
+	 * @param numerador Es el primer número que llamamos en el main, y con el que realizaremos el calculo desedo.
+	 * @param denomidor Es el segundo número que llamamos en el main, y con el que realizaremos el calculo desedo.
+	 * @return Devuelve el valor de la resta de ambos números.
 	 */
-	
-	public int sumar(int a, int b) {
-			
-			return a+b;
-		}
+	public double resta (double numerador, double denomidor) {
+		return numerador-denomidor;
+	}
+
 	
 	/**
-	 * Este método resta dos númeres reales 
-	 * @param c primer número entero
-	 * @param d segundo número entero
-	 * @return Resta de ambos números
+	 * Este método nos sirve para multiplicar dos números reales.
+	 * @param numerador Este el número que llamamos en el main para que sea multiplicado.
+	 * @param denomidor  Este el número que llamamos en el main para que sea el que multiplica a dicho número.
+	 * @return Nos devuelve el resultado de la multiplicación de ambos números.
 	 */
-	
-	public double resta (double c, double d) {
-		return c-d;
+	public double multiplicacion(double numerador, double denomidor) {
+		return numerador*denomidor;
 	}
 	
 	
 	/**
-	 * Este método multiplica dos números reales
-	 * @param e Primer número que es multiplicado
-	 * @param f Segundo número que multiplica.
-	 * @return Multiplicación de ambos números
+	 * Este método nos sirve para divir dos números reales.
+	 * @param numerador Este es el número que vamos a divir.
+	 * @param denomidor Este es el número por el cuál vamos a estar diviendo dicho número.
+	 * @return Nos devuelve el resultado de la división de ambos números
 	 */
-	
-	public double multiplicacion(double e, double f) {
-		return e*f;
+	public double division(double numerador, double denomidor) {
+		return numerador/denomidor;
 	}
-	
 	
 }
